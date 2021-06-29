@@ -1,0 +1,28 @@
+<body>
+    <div class="container1">
+        <div class="textoES"><h1>Iniciar Sesion</h1></div>
+        <div class="containerForm">
+            <form [formGroup]="formulario" (ngSubmit)="ValidarLogin()" ngNativeValidate >
+                <ul>
+                    <li>
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Correo Electronico</mat-label>
+                            <input type="email" matInput placeholder formControlName="usuario">
+                          </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Contraseña</mat-label>
+                            <input type="password" matInput placeholder formControlName="password">
+                          </mat-form-field>
+                    </li>
+                    <li>
+                        <button type="submit" mat-raised-button>Iniciar Sesion</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+</body>
+     

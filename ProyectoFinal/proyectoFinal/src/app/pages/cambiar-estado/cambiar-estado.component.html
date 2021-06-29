@@ -1,0 +1,35 @@
+<body>
+    <div class="container2">
+        <a [routerLink]="['/admin']" routerLinkActive="router-link-active" ><button type="submit" mat-raised-button>Vista Admin</button></a>
+    </div>
+    <div class="container1">
+        <div class="textoES"><h1>Cambiar Estado, Ingrese el id del ticket que desea cambiar!</h1></div>
+        <div class="containerForm">
+            <form [formGroup]="formulario" (ngSubmit)="EnviarDatosEstado()">
+                <ul>
+                    <li> 
+                        <mat-form-field class="controls" appearance="fill">
+                        <mat-label>Id </mat-label>
+                        <textarea formControlName="id" matInput required></textarea>
+                    </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Estado</mat-label>
+                            <mat-select  formControlName="estado" required>
+                                <mat-option value="abierto">Abierto</mat-option>
+                                <mat-option value="cerrado">Cerrado</mat-option>
+                                <mat-option value="en_desarrollo">En desarrollo</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <button type="submit" mat-raised-button>Enviar Solicitud de Cambio</button>
+                    </li>  
+                </ul>
+            </form>
+        </div>
+    </div>
+    
+</body>
+

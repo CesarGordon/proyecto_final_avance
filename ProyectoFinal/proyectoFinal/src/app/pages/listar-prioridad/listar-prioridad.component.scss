@@ -1,0 +1,50 @@
+body{
+    width:100%;
+    background-color:rgb(200, 235, 243);
+    text-align: center;
+    text-align: center;
+    box-shadow: 7px 13px 37px #000;
+
+}
+
+label{
+    display:inline-block;
+    position: relative;
+    color:#24303c;
+}
+
+#caja{
+    background-color: #24303c;
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+select{
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+button{
+    background: #24303c;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+#cajatitulo{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: #24303c;
+    color:white;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 4px;
+}
+

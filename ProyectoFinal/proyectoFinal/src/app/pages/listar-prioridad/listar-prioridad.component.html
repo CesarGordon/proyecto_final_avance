@@ -1,0 +1,43 @@
+<body>
+    
+    <form [formGroup]="formulario" (submit)="buscarTickets()">
+        <br>
+        <a [routerLink]="['/admin']" routerLinkActive="router-link-active" ><button type="submit" mat-raised-button>Vista Admin</button></a>
+        <br>
+        <br>
+        <br>
+        <div id="cajatitulo">
+            <h1>Ingrese prioridad de los tickets que quiere buscar!</h1>
+        </div>
+        
+
+        <select id="prioridad" formControlName="prioridad">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" mat-raised-button>Enviar Solicitud</button>
+    </form>
+
+    <div id="caja">
+        <table>
+            <tr>
+                <th>Estado</th>
+                <th>Categoria</th>
+                <th>Asunto</th>
+                <th>Descripcion</th>
+            </tr>
+            <tr *ngFor="let item of lista | filtrarPorPrioridad:buscarDato">
+                <td>{{item.estado}}</td>
+                <td>{{item.Categoria}}</td>
+                <td>{{item.asunto}}</td>
+                <td>{{item.descripcion}}</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+

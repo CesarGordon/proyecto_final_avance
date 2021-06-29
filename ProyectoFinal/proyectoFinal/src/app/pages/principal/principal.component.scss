@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(200, 235, 243);
+    overflow-wrap: break-word;
+    height: auto;
+    min-height: 100%;
+}
+
+.mainBox{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+p{
+    font-size: 200px;
+}
